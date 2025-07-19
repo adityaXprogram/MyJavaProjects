@@ -1,0 +1,68 @@
+Login (Src)
+import java.util.Scanner;
+
+public class Login {
+    final String uUsername = "@123";
+    final String uPassword = "@123";
+
+    public boolean LoginCheck(){
+        Scanner id = new Scanner(System.in);
+        System.out.print("Enter username: ");
+        String username = id.nextLine();
+        System.out.print("Enter password: ");
+        String password = id.nextLine();
+
+        if(username.equals(uUsername) && password.equals(uPassword)){
+            System.out.println("Login Successful");
+            return true;
+        }
+        else{
+            System.out.println("Login failed! ");
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+        Login l1 = new Login();
+        l1.LoginCheck();
+
+    }
+}
+
+TrafficSignal (Src)
+import java.util.Scanner;
+public class TrafficSignal {
+    
+    final String stp = "Red";
+    final String gRea = "Yellow";
+    final String go = "Green";
+    
+    void function(){
+    Scanner io = new Scanner(System.in);
+        System.out.println("Welcome! to traffic signal control panel.");
+        System.out.println("Choose Red(Stop), Yellow(Get Ready), Green(Go)");
+        System.out.print("Enter colour: ");
+        String colour = io.nextLine();
+        io.close();
+        //main function
+        if (colour.equals(stp)){
+            System.out.println("Stop");
+        } else if (colour.equals(gRea)) {
+            System.out.println("Get Ready");
+        } else if (colour.equals(go)) {
+            System.out.println("Go");
+        } else {
+            System.out.println("Invalid signal colour");
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Login l1 = new Login();
+        if(l1.LoginCheck()){
+            TrafficSignal tS = new TrafficSignal();
+            tS.function();
+        }
+    }
+}
+
