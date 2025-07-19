@@ -1,0 +1,50 @@
+LoginVerifier Program code
+import java.util.Scanner;
+
+public class LoginVerifier {
+     final String uUsername = "@123";
+     final String uPassword = "@123";
+
+    public boolean LoginCheck(){
+        Scanner io = new Scanner(System.in);
+        System.out.print("Enter username: ");
+        String username = io.nextLine();
+        System.out.print("Enter password: ");
+        String password = io.nextLine();
+        io.close();
+
+        if(username.equals(uUsername) && password.equals(uPassword)){
+            System.out.println("Login Successful");
+            return true;
+        }
+        else{
+            System.out.println("Login failed! ");
+            return false;
+        }
+    }
+
+    public static void main(String[] args) {
+        LoginVerifier lv = new LoginVerifier();
+        lv.LoginCheck();
+
+    }
+}
+
+Info file program code
+
+public class Info {
+    void Information(){
+
+        System.out.println("No data available yet!");
+
+    }
+
+    public static void main(String[] args) {
+        LoginVerifier lv = new LoginVerifier();
+        if(lv.LoginCheck()){
+            Info sc = new Info();
+            sc.Information();
+        }
+    }
+}
+
