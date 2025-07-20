@@ -1,4 +1,4 @@
-LoginVerifier Program code
+(LoginVerifier Program code)
 import java.util.Scanner;
 
 public class LoginVerifier {
@@ -30,7 +30,7 @@ public class LoginVerifier {
     }
 }
 
-Info file program code
+(Info file program code)
 
 public class Info {
     void Information(){
