@@ -15,6 +15,6 @@ public class LargestSmallestNumFinder {
         } else{
             System.out.println(num2+" is greater than "+num1);
         }
-        System.out.println("Happy Java-ing! 👨‍💻👩‍💻");
+        System.out.println("Happy Java-ing!");
     }
 }
