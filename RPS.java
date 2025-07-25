@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-public class RPC{//RPC stands for Rock Paper Scissor
+public class RPS{//RPC stands for Rock Paper Scissor
     public static void main(String[] args) {
         Scanner io = new Scanner(System.in);
         Random ran = new Random();
